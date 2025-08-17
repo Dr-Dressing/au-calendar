@@ -1,0 +1,3 @@
+*.class
+*.ics
+# I'm assuming people are compiling these themselves.
