@@ -89,3 +89,8 @@ Followed by importing your `SUBJECT A, praktisk` into that very calendar.
 ![ImportCalendar](images/image.png)
 
 Do this for every subject, in this order, and you should be allowed to change colors.
+
+
+## 17/08/2025
+
+I've noticed that some of the comments I've made are out of date. I'll fix them at some point.
