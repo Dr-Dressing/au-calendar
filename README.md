@@ -9,20 +9,30 @@ While it *is* possible to do this manually, it would probably take an eternity.
 
 ### Java Version
 
-This was compiled using this compiler; however I'm sure a great range of versions work. This is because most of the methods are trivial.
+This was compiled using this compiler; ~~however I'm sure a great range of versions work. This is because most of the methods are trivial.~~
+I've come to find out through a little testing, that it's necessary to have at least the version shown below.
 
 ```
 java 24.0.1 2025-04-15
 Java(TM) SE Runtime Environment (build 24.0.1+9-30)
 Java HotSpot(TM) 64-Bit Server VM (build 24.0.1+9-30, mixed mode, sharing)
 ```
+Originally, I had the user check out `java.com`, but it seems that the download from Oracle, and their Java development kit is necessary.
+
+[Please download the latest JDK here.](https://www.oracle.com/java/technologies/downloads/)
+
+This is because, without the JDK, you won't have the `javac` command, which is necessary for compiling this program. See more about that in the guide.
 
 # Guide
 
 ### ***NOTE :*** This is a guide for almost absolute beginners. I'm assuming that people of all faculties could practically be using this software.
 
 
-Copy the repo, either by downloading the zip, or (if you have git installed) `git clone https://github.com/Dr-Dressing/au-calendar` to whichever folder you're currently in.
+Copy the repo, either by downloading the zip, or (if you have git installed) 
+
+* `git clone https://github.com/Dr-Dressing/au-calendar`
+
+to whichever folder you're currently in.
 
 Find your key on `mitstudie.au.dk`, and pass it as an argument, when running the executable.
 
@@ -33,11 +43,13 @@ This is an example of what a key looks like.
 
 ## Compiling the software
 
-It should be a given, but you must have installed Java to compile. You can download Java on [https://www.java.com/en/download/](https://www.java.com/en/download/).
+It should be a given, but you must have installed Java to compile. You can download the JDK on [https://www.oracle.com/java/technologies/downloads](https://www.oracle.com/java/technologies/downloads).
 
 If you have Make, you can compile with `make` inside of the `/src/` folder. If not, navigate to your directory through a terminal with `cd ~/{wherever you've downloaded it}/src`.
 
-Then, compile using `javac ./*.java`.
+Then, compile using `javac ./*.java`. 
+
+* (This is where having the JDK is necessary, otherwise you get compatibility issues trying to run the program)
 
 You'll see a lot of new classes in the `src` folder. One corresponding to each of the `.java` files.
 
